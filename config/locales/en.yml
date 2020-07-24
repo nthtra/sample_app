@@ -50,7 +50,7 @@ en:
       contact_title: "Contact"
       login_title: "Signin"
       languages: "Language"
-      users: "Uses"
+      users: "Users"
       account: "Account"
       profile: "Profile"
       settings: "Setting"
@@ -76,6 +76,27 @@ en:
       error_message: Invalid email/password combination
       sign_up_failed: Sign up failed
       flash: "User not found !"
+      profile_updated: "Profile updated"
+      login: "Please login!"
+    index:
+      all_user: "All users"
+    user: 
+      delete: "Delete"
+      sure: "Are you sure?"
+      user_not_found: "User not found"
+    edit:
+      edit_title: "Edit user"
+      update: "Update your profile"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
+      submit: "Submit"
+      change: "Change"
+      failed: "Update failed"
+    delete: 
+      deleted: "Deleted"
+      delete_failed: "Delete failed"
   sessions:
     create:
       success: "Log in successfully, hello %{username}!"
@@ -87,4 +108,6 @@ en:
       new_user: New user?
       sign_up_now: "Signup now"
       remember_me: "Remember me on this computer"
+      sign_up_failed: "Sign up failed"
+      error_message: "Invalid email/password combination"
 
