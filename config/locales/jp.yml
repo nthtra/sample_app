@@ -1,0 +1,41 @@
+jp:
+  layouts: 
+    application: 
+      app_title: "サンプルアプリ"
+      english: "英語"
+      japanese: "日本語"
+  static_pages:
+    home:
+      home_title: "サンプルアプリ" 
+      home_html: "これは%{link} サンプルアプリ"
+      ruby_on_rails: "Ruby on Railsチュートリアル"
+      about: "情報ページ"
+      contact: "連絡ページ"
+      help: "助けページ"
+      home: "ホームページ"
+    help:
+      help_title: "助け"
+      help_html: "このリンク%{link_help}クリックして、Ruby on Railsチュートリアルのヘルプを入手する"
+      help_description_title: "ここで助けを得る："
+      help_description_detail:  "このサンプルアプリのヘルプについて："
+    about:
+      about_title: "情報"
+      about_html: |
+                    この %{link}は
+                    %{link_learn}の一部であり、
+                    %{link} と
+                    %{link_screen_casts}であり
+                    使用してWeb開発を教えることができます
+                    %{link}
+                    これはチュートリアルのサンプルアプリです。
+      about_description_tutorial: "ファミリーのチュートリアル："
+      about_description_book: "参考の本："
+      about_description_series: "シリーズ："
+      about_description_ror: "Ruby on Rails："
+      about_description_end: "これはチュートリアルのサンプルアプリです。"
+    contact:
+      contact_title: "連絡"
+      contact_html:  "サンプルアプリケーションについては、 このリンク%{link_contact}をクリックして問い合わせてください。"
+                     
+      contact_description_title: "ここで連絡してください："
+      contact_page: "連絡先"

@@ -2,14 +2,29 @@ vi:
   layouts: 
     application: 
       app_title: "Ứng dụng mẫu"
-      english: "tiếng anh"
-      vietnamese: "tiếng việt"
+      english: "Tiếng anh"
+      vietnamese: "Tiếng việt"
       title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+    header: 
+      header_title: "Ứng dụng mẫu"
+      home_logo: "Trang chính"
+      help_title: "Trợ giúp"
+      about_title: "Giới thiệu"
+      contact_title: "Liên hệ"
+      login_title: "Đăng nhập"
+    footer: 
+      footer_about: "Giới thiệu"
+      footer_contact: "Liên hệ"
+      footer_news: "Bản tin"
+      footer_link_content: "Hướng dẫn về rails"
+      footer_html: "%{link} của %{link_author}"
+      author_link: "Michael Hartl"
   static_pages:
     home:
       home_title: "Ứng dụng mẫu" 
       home_html: "%{link} đây là ứng dụng mẫu"
       link_home: "Trang Ruby on Rails"
+      sign_up: "Đăng ký ngay hôm nay!"
 
     help:
       help_title: "Trợ giúp"
@@ -33,3 +48,7 @@ vi:
       contact_html:  "Liên hệ về hỗ trợ rails tại%{link_contact}"
                      
       link_contact: "Liên hệ"
+  users:
+    new: 
+      sign_up: "Đăng ký"
+      sign_up_html: "Đây sẽ là trang đăng ký cho người dùng mới."

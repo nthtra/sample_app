@@ -4,3 +4,6 @@ link:
   link_screen_casts: "https://screencasts.railstutorial.org/"
   link_contact: "https://www.railstutorial.org/contact/"
   link_help: "https://www.railstutorial.org/help"
+  link_author: "https://www.michaelhartl.com/"
+size:
+  logo: 200

@@ -1,16 +1,32 @@
 en:
   layouts: 
     application: 
-      app_title: "サンプルアプリ"
-      english: "english"
-      vietnamese: "vietnamese"
+      app_title: "Sample app"
+      english: "English"
+      vietnamese: "Vietnamese"
       title: "Ruby on Rails Tutorial Sample App"
+    header: 
+      header_title: "Sample app"
+      home_logo: "Home"
+      help_title: "Help"
+      about_title: "About"
+      contact_title: "Contact"
+      login_title: "Login"
+    footer: 
+      footer_about: "About"
+      footer_contact: "Contact"
+      footer_news: "News"
+      footer_link_content: "Rails tutorial"
+      footer_html: "The %{link} by %{link_author}"
+      author_link: "Michael Hartl"
+
+
   static_pages:
     home:
-      home_title: "Home" 
+      home_title: "Welcome to the Sample App"
       home_html: "This is the home page for the %{link} sample application."
       link_home: "Ruby on Rails page"
-      
+      sign_up: "Sign up now!"
     help:
       help_title: "Help"
       help_html:  |
@@ -37,4 +53,8 @@ en:
       contact_html: | 
                      Contact the Ruby on Rails Tutorial about the sample app at the
                      %{link_contact}
-      link_contact: "Contact"
+      link_contact: "Contact" 
+  users:
+    new: 
+      sign_up: "Sign up"
+      sign_up_html: "This will be a signup page for new users."
