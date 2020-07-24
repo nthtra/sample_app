@@ -46,6 +46,12 @@ vi:
       contact_title: "Liên hệ"
       login_title: "Đăng nhập"
       languages: "Ngôn ngữ"
+      users: "Tất cả người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+
     footer: 
       footer_about: "Giới thiệu"
       footer_contact: "Liên hệ"
@@ -77,3 +83,5 @@ vi:
       log_in: "Đăng nhập"
       new_user: "Người dùng mới?"
       sign_up_now: "Đăng ký ngay"
+      remember_me: "Ghi nhớ đăng nhập"
+      logout: "Đăng xuất"

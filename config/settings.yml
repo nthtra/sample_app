@@ -18,3 +18,5 @@ validations:
       max_length: 50
     avatar:
       size: 80
+form:
+  checkbox: "1"
