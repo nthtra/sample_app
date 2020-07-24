@@ -39,6 +39,7 @@ p{
   line-height: 1.7em;
 }
 
+  /* header */
 #logo {
   float: left;
   margin-right: 10px; 
@@ -133,7 +134,7 @@ aside {
 }
 
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid $gray-light-1;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;

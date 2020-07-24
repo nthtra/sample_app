@@ -5,21 +5,6 @@ en:
       english: "English"
       vietnamese: "Vietnamese"
       title: "Ruby on Rails Tutorial Sample App"
-    header: 
-      header_title: "Sample app"
-      home_logo: "Home"
-      help_title: "Help"
-      about_title: "About"
-      contact_title: "Contact"
-      login_title: "Signin"
-      languages: "Language"
-    footer: 
-      footer_about: "About"
-      footer_contact: "Contact"
-      footer_news: "News"
-      footer_link_content: "Rails tutorial"
-      footer_html: "The %{link} by %{link_author}"
-      author_link: "Michael Hartl"
   static_pages:
     home:
       home_title: "Welcome to the Sample App"
@@ -57,6 +42,21 @@ en:
     error_messages:
       title: "The form contains"
       error: "error"
+    header: 
+      header_title: "Sample app"
+      home_logo: "Home"
+      help_title: "Help"
+      about_title: "About"
+      contact_title: "Contact"
+      login_title: "Signin"
+      languages: "Language"
+    footer: 
+      footer_about: "About"
+      footer_contact: "Contact"
+      footer_news: "News"
+      footer_link_content: "Rails tutorial"
+      footer_html: "The %{link} by %{link_author}"
+      author_link: "Michael Hartl"
   users:
     new: 
       sign_up: "Sign up"
@@ -71,3 +71,14 @@ en:
       error_message: Invalid email/password combination
       sign_up_failed: Sign up failed
       flash: "User not found !"
+  sessions:
+    create:
+      success: "Log in successfully, hello %{username}!"
+      danger: "There was something wrong with your account"
+    new:
+      email: "Email"
+      password: "Password"
+      log_in: "Login"
+      new_user: New user?
+      sign_up_now: "Đăng ký ngay"
+
