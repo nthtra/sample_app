@@ -11,7 +11,8 @@ en:
       help_title: "Help"
       about_title: "About"
       contact_title: "Contact"
-      login_title: "Login"
+      login_title: "Signin"
+      languages: "Language"
     footer: 
       footer_about: "About"
       footer_contact: "Contact"
@@ -19,8 +20,6 @@ en:
       footer_link_content: "Rails tutorial"
       footer_html: "The %{link} by %{link_author}"
       author_link: "Michael Hartl"
-
-
   static_pages:
     home:
       home_title: "Welcome to the Sample App"
@@ -54,7 +53,21 @@ en:
                      Contact the Ruby on Rails Tutorial about the sample app at the
                      %{link_contact}
       link_contact: "Contact" 
+  shared: 
+    error_messages:
+      title: "The form contains"
+      error: "error"
   users:
     new: 
       sign_up: "Sign up"
       sign_up_html: "This will be a signup page for new users."
+      create_button: "Create my account"
+      title: "Welcome to the Sample App!"
+      log_in: Log in
+      new_user: New user?
+      email: Email
+      password: Password
+      sign_up_now: Sign up now
+      error_message: Invalid email/password combination
+      sign_up_failed: Sign up failed
+      flash: "User not found !"

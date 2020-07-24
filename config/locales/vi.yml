@@ -12,6 +12,7 @@ vi:
       about_title: "Giới thiệu"
       contact_title: "Liên hệ"
       login_title: "Đăng nhập"
+      languages: "Ngôn ngữ"
     footer: 
       footer_about: "Giới thiệu"
       footer_contact: "Liên hệ"
@@ -48,7 +49,14 @@ vi:
       contact_html:  "Liên hệ về hỗ trợ rails tại%{link_contact}"
                      
       link_contact: "Liên hệ"
+  shared: 
+    error_messages:
+      title: "Nội dung"
+      error: "Lỗi"
   users:
     new: 
       sign_up: "Đăng ký"
       sign_up_html: "Đây sẽ là trang đăng ký cho người dùng mới."
+      create_button: "Tạo tài khoản"
+      title: "Chào mừng đến với ứng dụng mẫu!"
+      flash: "Không tìm thấy người dùng"
