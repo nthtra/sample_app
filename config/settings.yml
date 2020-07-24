@@ -7,3 +7,12 @@ link:
   link_author: "https://www.michaelhartl.com/"
 size:
   logo: 200
+validations:
+  user:
+    email:
+      regex: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
+      max_length: 255
+    password:
+      min_length: 6
+    name:
+      max_length: 50
