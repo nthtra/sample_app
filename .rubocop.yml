@@ -12,6 +12,7 @@ inherit_from:
 # Common configuration.
 AllCops:
   # Include gemspec and Rakefile
+  TargetRubyVersion: 2.6.4.1
   Include:
     - 'app/**/*'
     - 'lib/**/*'

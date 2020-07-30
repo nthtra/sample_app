@@ -1,0 +1,5 @@
+<% provide :title, t(".help_title") %>
+<h1><%= t ".help_title"  %></h1>
+<p>
+  <%= t ".help_html", link_help: link_to(t(".link_help"), Settings.link.link_help) %>
+</p>
