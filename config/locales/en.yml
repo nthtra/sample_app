@@ -3,7 +3,7 @@ en:
     application: 
       app_title: "サンプルアプリ"
       english: "english"
-      japanese: "japanese"
+      vietnamese: "vietnamese"
       title: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:

@@ -1,0 +1,35 @@
+vi:
+  layouts: 
+    application: 
+      app_title: "Ứng dụng mẫu"
+      english: "tiếng anh"
+      vietnamese: "tiếng việt"
+      title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+  static_pages:
+    home:
+      home_title: "Ứng dụng mẫu" 
+      home_html: "%{link} đây là ứng dụng mẫu"
+      link_home: "Trang Ruby on Rails"
+
+    help:
+      help_title: "Trợ giúp"
+      help_html: "Click vào link này %{link_help}、và xem hướng dẫn về Ruby on rails"
+      link_help: "Trợ giúp"
+    about:
+      about_title: "Thông tin"
+      about_html: |
+                    % {link}, một phần của
+                    % {link_learn}, là một
+                    % {link} và
+                    % {link_screen_casts}
+                    để dạy phát triển web với
+                    % {link}
+                    Đây là ứng dụng mẫu cho hướng dẫn.
+      link_about: "thông tin"
+      link_learn: "Học"
+      link_screen_casts: "loạt screencast"
+    contact:
+      contact_title: "Liên hệ"
+      contact_html:  "Liên hệ về hỗ trợ rails tại%{link_contact}"
+                     
+      link_contact: "Liên hệ"
