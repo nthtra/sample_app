@@ -5,6 +5,39 @@ vi:
       english: "Tiếng anh"
       vietnamese: "Tiếng việt"
       title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+  static_pages:
+    home:
+      home_title: "Ứng dụng mẫu" 
+      home_html: "%{link} đây là ứng dụng mẫu"
+      link_home: "Trang Ruby on Rails"
+      sign_up: "Đăng ký ngay hôm nay!"
+
+    help:
+      help_title: "Trợ giúp"
+      help_html: "Click vào link này %{link_help}、và xem hướng dẫn về Ruby on rails"
+      link_help: "Trợ giúp"
+    about:
+      about_title: "Thông tin"
+      about_html: |
+                    %{link}, một phần của
+                    %{link_learn}, là một
+                    %{link} và
+                    %{link_screen_casts}
+                    để dạy phát triển web với
+                    %{link}
+                    Đây là ứng dụng mẫu cho hướng dẫn.
+      link_about: "thông tin"
+      link_learn: "Học"
+      link_screen_casts: "loạt screencast"
+    contact:
+      contact_title: "Liên hệ"
+      contact_html:  "Liên hệ về hỗ trợ rails tại%{link_contact}"
+                     
+      link_contact: "Liên hệ"
+  shared: 
+    error_messages:
+      title: "Nội dung"
+      error: "Lỗi"
     header: 
       header_title: "Ứng dụng mẫu"
       home_logo: "Trang chính"
@@ -20,39 +53,6 @@ vi:
       footer_link_content: "Hướng dẫn về rails"
       footer_html: "%{link} của %{link_author}"
       author_link: "Michael Hartl"
-  static_pages:
-    home:
-      home_title: "Ứng dụng mẫu" 
-      home_html: "%{link} đây là ứng dụng mẫu"
-      link_home: "Trang Ruby on Rails"
-      sign_up: "Đăng ký ngay hôm nay!"
-
-    help:
-      help_title: "Trợ giúp"
-      help_html: "Click vào link này %{link_help}、và xem hướng dẫn về Ruby on rails"
-      link_help: "Trợ giúp"
-    about:
-      about_title: "Thông tin"
-      about_html: |
-                    % {link}, một phần của
-                    % {link_learn}, là một
-                    % {link} và
-                    % {link_screen_casts}
-                    để dạy phát triển web với
-                    % {link}
-                    Đây là ứng dụng mẫu cho hướng dẫn.
-      link_about: "thông tin"
-      link_learn: "Học"
-      link_screen_casts: "loạt screencast"
-    contact:
-      contact_title: "Liên hệ"
-      contact_html:  "Liên hệ về hỗ trợ rails tại%{link_contact}"
-                     
-      link_contact: "Liên hệ"
-  shared: 
-    error_messages:
-      title: "Nội dung"
-      error: "Lỗi"
   users:
     new: 
       sign_up: "Đăng ký"
@@ -60,3 +60,20 @@ vi:
       create_button: "Tạo tài khoản"
       title: "Chào mừng đến với ứng dụng mẫu!"
       flash: "Không tìm thấy người dùng"
+      log_in: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      sign_up_now: "Đăng ký ngay"
+      error_message: "Thư điện tử/mật khẩu không hợp lệ"
+      sign_up_failed: "Đăng ký thất bại"
+  sessions:
+    create:
+      success: "Đăng nhập thành công, xin chào %{username}!"
+      danger: "Có gì đó không đúng với tài khoản của bạn"
+    new:
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      log_in: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      sign_up_now: "Đăng ký ngay"
