@@ -5,7 +5,23 @@
       <ul class="nav navbar-nav navbar-right">
         <li class="nav-link"><%= link_to t(".home_logo"), home_path %></li>
         <li class="nav-link ml-2"><%= link_to t(".help_title"), help_path %></li>
+
+        <% if logged_in? %>
+          <li class="nav-item"><%= link_to t(".users"), users_path(locale), class: "nav-link"%></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <%= t ".account" %>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <%= link_to t(".profile"), user_path(locale, current_user), class: "dropdown-item" %>
+              <%= link_to t(".settings"), edit_user_path(locale, current_user), class: "dropdown-item" %>
+              <div class="dropdown-divider"></div>
+              <%= link_to t(".logout"), logout_path, method: :delete, class: "dropdown-item" %>
+            </div>
+          </li>
+        <% else %>
         <li class="nav-link ml-2"><%= link_to t(".login_title"), login_path %></li>
+         <% end %>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <%= t ".languages" %>

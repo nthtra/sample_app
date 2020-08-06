@@ -50,6 +50,11 @@ en:
       contact_title: "Contact"
       login_title: "Signin"
       languages: "Language"
+      users: "Uses"
+      account: "Account"
+      profile: "Profile"
+      settings: "Setting"
+      logout: "Logout"
     footer: 
       footer_about: "About"
       footer_contact: "Contact"
@@ -80,5 +85,6 @@ en:
       password: "Password"
       log_in: "Login"
       new_user: New user?
-      sign_up_now: "Đăng ký ngay"
+      sign_up_now: "Signup now"
+      remember_me: "Remember me on this computer"
 
