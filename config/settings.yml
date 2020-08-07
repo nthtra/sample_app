@@ -19,4 +19,10 @@ validations:
     avatar:
       size: 80
 form:
-  checkbox: "1"
+  checkbox: 1
+checkbox:
+  checked_value: '1'
+gravatar:
+  link: "https://gravatar.com/emails"
+pagination:
+  per_page: 15

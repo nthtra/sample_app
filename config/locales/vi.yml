@@ -73,6 +73,27 @@ vi:
       sign_up_now: "Đăng ký ngay"
       error_message: "Thư điện tử/mật khẩu không hợp lệ"
       sign_up_failed: "Đăng ký thất bại"
+      profile_updated: "Cập nhật thông tin cá nhân thành công =)"
+      login: "Hãy đăng nhập!"
+    index:
+      all_user: "Tất cả người dùng"
+    user: 
+      delete: "Xoá"
+      sure: "Bạn đã chắc chắn chưa?"
+      user_not_found: "Không tìm thấy người dùng"
+    edit:
+      edit_title: "Sửa thông tin"
+      update: "Cập nhật hồ sơ của bạn"
+      name: "Tên"
+      email: "Thư điện tử"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận lại mật khẩu"
+      submit: "Gửi đi"
+      change: "Thay đổi"
+      failed: "Cập nhật không thành công"
+    delete: 
+      deleted: "Đã xoá"
+      delete_failed: "Xoá thất bại"
   sessions:
     create:
       success: "Đăng nhập thành công, xin chào %{username}!"
@@ -85,3 +106,5 @@ vi:
       sign_up_now: "Đăng ký ngay"
       remember_me: "Ghi nhớ đăng nhập"
       logout: "Đăng xuất"
+      sign_up_failed: "Đăng ký thất bại"
+      error_message: "email hoặc password không hợp lệ"
