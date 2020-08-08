@@ -5,9 +5,12 @@ ruby "2.7.0"
 
 gem "bcrypt", "3.1.13"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "carrierwave", "0.10.0"
 gem "config"
 gem "faker", "1.4.2"
+gem "fog", "1.36.0"
 gem "jbuilder", "~> 2.7"
+gem "mini_magick", "3.8.0"
 gem "mysql2", ">= 0.4.4"
 gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.3", ">= 6.0.3.2"

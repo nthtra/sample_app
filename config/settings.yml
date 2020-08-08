@@ -5,8 +5,10 @@ link:
   link_contact: "https://www.railstutorial.org/contact/"
   link_help: "https://www.railstutorial.org/help"
   link_author: "https://www.michaelhartl.com/"
+  home_page: "https://rubyonrails.org/"
 size:
   logo: 200
+  content_size: 140
 validations:
   user:
     email:
@@ -26,5 +28,13 @@ gravatar:
   link: "https://gravatar.com/emails"
 pagination:
   per_page: 15
+  feed_page: 10
 time: 
   expired: 2
+  activate: 2
+micropost:
+  image_content_type:   <%= %w(jpg jpeg gif png) %>
+  image_content_type_form: "image/jpeg,image/gif,image/png"
+image:
+  rail_logo: "rails_logo.png"
+  size: 5

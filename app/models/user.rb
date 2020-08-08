@@ -2,9 +2,11 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.validations.user.email.regex
   USERS_PARAMS = %i(name email password password_confirmation).freeze
   RESET_PASSWORD_PARAMS = %i(password password_confirmation).freeze
+
   attr_accessor :remember_token, :activation_token, :reset_token
-  before_save :downcase_email
-  before_create :create_activation_digest
+  
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
     length: {maximum: Settings.validations.user.name.max_length}
   validates :email, presence: true,
@@ -15,6 +17,9 @@ class User < ApplicationRecord
             allow_nil: true,
     length: {minimum: Settings.validations.user.password.min_length}
 
+  before_save :downcase_email
+  before_create :create_activation_digest
+  
   class << self
     def digest string
       cost =
@@ -68,6 +73,19 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < Settings.time.expired.hours.ago
+  end
+
+  def send_mail_activate
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  def activate
+    update activated: true, activated_at: Time.zone.now
+    reset_sent_at < Settings.time.activate.hours.ago
+  end
+
+  def feed
+    microposts.order_by_created_at_desc
   end
 
   private
