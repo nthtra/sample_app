@@ -81,6 +81,7 @@ vi:
       delete: "Xoá"
       sure: "Bạn đã chắc chắn chưa?"
       user_not_found: "Không tìm thấy người dùng"
+      check_mail: "Hãy kiểm tra email của bạn để kích hoạt tài khoản của bạn."
     edit:
       edit_title: "Sửa thông tin"
       update: "Cập nhật hồ sơ của bạn"
@@ -108,3 +109,22 @@ vi:
       logout: "Đăng xuất"
       sign_up_failed: "Đăng ký thất bại"
       error_message: "email hoặc password không hợp lệ"
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      title: "Ứng dụng Mẫu"
+      greeting: "Xin chào"
+      welcome: |
+        Chào mừng đến với Ứng dụng Mẫu!
+        Nhấn vào link dưới đây để kích hoạt tài khoản của bạn:
+      activate: "Kích hoạt"
+      activated: "Đã kích hoạt tài khoản"
+      invalid_link: "Liên kết kích hoạt không hợp lệ"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      click_below: "Nhấn vào link dưới đây để đặt lại mật khẩu:"
+      expired_time: "Link này sẽ hết hạn trong vòng 2 tiếng."
+      if_not_you: |
+        Nếu như bạn không yêu cầu thay đổi mật khẩu,
+        hãy bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
+      reset_password: "Đặt lại mật khẩu"
