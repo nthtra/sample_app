@@ -21,4 +21,12 @@ class ApplicationController < ActionController::Base
     flash[:danger] = t "users.new.login"
     redirect_to login_url
   end
+
+  def find_user_by_id
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t "users.user.user_not_found"
+    redirect_to root_url
+  end
 end

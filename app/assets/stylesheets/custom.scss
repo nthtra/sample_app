@@ -172,10 +172,12 @@ input {
     padding: 10px 0;
     border-top: 1px solid $gray-91;
   }
+  
   .user {
     margin-top: 5em;
     padding-top: 0;
   }
+
   .content {
     display: block;
     margin-left: 60px;
@@ -184,11 +186,13 @@ input {
       padding: 5px 0;
     }
   }
+
   .timestamp {
     color: $gray-light;
     display: block;
     margin-left: 60px;
   }
+
   .gravatar {
     float: left;
     margin-right: 10px;
@@ -208,4 +212,43 @@ span.picture {
   input {
     border: 0;
   }
+}
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-light-1;
+    color: gray;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
 }

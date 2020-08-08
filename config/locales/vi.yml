@@ -170,3 +170,9 @@ vi:
     errors:
       image_format: Sai định dạng ảnh
       size_too_big: "ảnh phải nhỏ hơn 5MB"
+  followers:
+    index: 
+      title: "Người đang theo dõi"
+  following:
+    index: 
+      title: "Đang theo dõi"

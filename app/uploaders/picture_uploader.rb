@@ -9,7 +9,7 @@ class PictureUploader < CarrierWave::Uploader::Base
   end
 
   storage :file
- 
+
   def store_dir
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
@@ -17,5 +17,4 @@ class PictureUploader < CarrierWave::Uploader::Base
   def extension_white_list
     Settings.micropost.image_content_type
   end
-
 end

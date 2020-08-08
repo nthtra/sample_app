@@ -4,7 +4,17 @@ class User < ApplicationRecord
   RESET_PASSWORD_PARAMS = %i(password password_confirmation).freeze
 
   attr_accessor :remember_token, :activation_token, :reset_token
-  
+
+  has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+            foreign_key: "follower_id",
+            dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+            foreign_key: "followed_id",
+            dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
+
   has_many :microposts, dependent: :destroy
 
   validates :name, presence: true,
@@ -19,7 +29,7 @@ class User < ApplicationRecord
 
   before_save :downcase_email
   before_create :create_activation_digest
-  
+
   class << self
     def digest string
       cost =
@@ -75,17 +85,20 @@ class User < ApplicationRecord
     reset_sent_at < Settings.time.expired.hours.ago
   end
 
-  def send_mail_activate
-    UserMailer.account_activation(self).deliver_now
-  end
-
-  def activate
-    update activated: true, activated_at: Time.zone.now
-    reset_sent_at < Settings.time.activate.hours.ago
-  end
-
   def feed
-    microposts.order_by_created_at_desc
+    Micropost.feed_by_user following_ids << id
+  end
+
+  def follow other_user
+    following << other_user
+  end
+
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  def following? other_user
+    following.include? other_user
   end
 
   private

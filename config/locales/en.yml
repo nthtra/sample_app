@@ -109,6 +109,10 @@ en:
       not_activated_account_warning: This user has not been activated yet
     show:
       microposts: "Microposts"
+    unfollow: 
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
   sessions:
     create:
       success: "Log in successfully, hello %{username}!"
@@ -178,5 +182,9 @@ en:
     errors:
       image_format: "must be a valid image format"
       size_too_big: "should be less than 5MB"
-
-
+  followers:
+    index: 
+      title: "Followers"
+  following:
+    index: 
+      title: "Following"
