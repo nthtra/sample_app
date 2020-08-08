@@ -109,6 +109,7 @@ vi:
       logout: "Đăng xuất"
       sign_up_failed: "Đăng ký thất bại"
       error_message: "email hoặc password không hợp lệ"
+      forgot_password: "Quên mật khẩu"
   user_mailer:
     account_activation:
       subject: "Kích hoạt tài khoản"
@@ -121,10 +122,32 @@ vi:
       activated: "Đã kích hoạt tài khoản"
       invalid_link: "Liên kết kích hoạt không hợp lệ"
     password_reset:
+      title: "Thay đổi mật khẩu"
       subject: "Đặt lại mật khẩu"
       click_below: "Nhấn vào link dưới đây để đặt lại mật khẩu:"
       expired_time: "Link này sẽ hết hạn trong vòng 2 tiếng."
       if_not_you: |
         Nếu như bạn không yêu cầu thay đổi mật khẩu,
         hãy bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên.
-      reset_password: "Đặt lại mật khẩu"
+  password_resets:
+    new:
+      subject: "Đặt lại mật khẩu"
+      submit: "Gửi"
+      click_below: "To reset your password click the link below:"
+      expired_time: "This link will expire in two hours."
+      if_not_you: |
+        If you did not request your password to be reset,
+        please ignore this email and your password will stay as it is.
+      reset_password: "Reset password"
+      email: "Thư điện tử"
+    edit: 
+      title: "Đặt lại mật khẩu"
+      update: "Cập nhật mật khẩu"
+    sent_email_notification: Hướng dẫn đặt lại mật khẩu đã được gửi về email của bạn
+    email_not_found: Không tìm thấy địa chỉ email này
+    empty: "Không được để trống"
+    success: "Mật khẩu đã được đặt lại"
+    expired: "Đã hết hạn đặt lại mật khẩu"
+    fail: "Thay đổi mật khẩu thất bại"
+    flash: "Không tìm thấy người dùng"
+    forbidden: "Bạn không được phép thực hiện hành động này"
