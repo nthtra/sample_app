@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :find_user_by_id, except: %i(index new create)
   before_action :logged_in_user, except: %i(new create)
-  before_action :correct_user, only: %i(:edit, :update)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def index
@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "users.new.title"
-      redirect_to @user
+      @user.send_mail_activate
+      flash[:info] = t "users.user.check_mail"
+      redirect_to root_url
     else
       render :new
     end
@@ -40,7 +40,7 @@ class UsersController < ApplicationController
   def destroy
     if @user.destroy
       flash[:success] = t ".users.delete.deleted"
-    else 
+    else
       flash[:danger] = t ".users.delete.delete_failed"
     end
     redirect_to users_url
@@ -65,7 +65,7 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    redirect_to root_url  unless current_user.admin?
+    redirect_to root_url unless current_user.admin?
   end
 
   def find_user_by_id
