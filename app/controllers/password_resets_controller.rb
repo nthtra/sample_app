@@ -49,9 +49,9 @@ class PasswordResetsController < ApplicationController
   def valid_user
     unless @user&.activated? &&
            @user&.authenticated?(:reset, params[:id])
-          
-    flash[:danger] = t "password_resets.forbidden"   
-    redirect_to root_url
+
+      flash[:danger] = t "password_resets.forbidden"
+      redirect_to root_url
     end
   end
 

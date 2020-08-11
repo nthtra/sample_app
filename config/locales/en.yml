@@ -11,6 +11,7 @@ en:
       home_html: "This is the home page for the %{link} sample application."
       link_home: "Ruby on Rails page"
       sign_up: "Sign up now!"
+      feed: "Micoposts feed"
     help:
       help_title: "Help"
       help_html:  |
@@ -62,6 +63,9 @@ en:
       footer_link_content: "Rails tutorial"
       footer_html: "The %{link} by %{link_author}"
       author_link: "Michael Hartl"
+    micropost_form: 
+      create_new: "Compose new micropost..."
+      post: "Post"
   users:
     new: 
       sign_up: "Sign up"
@@ -103,6 +107,8 @@ en:
       invalid_activated_link: Invalid activation link
       not_activated_account_notification: Account not activated. Check your email for the activation link.
       not_activated_account_warning: This user has not been activated yet
+    show:
+      microposts: "Microposts"
   sessions:
     create:
       success: "Log in successfully, hello %{username}!"
@@ -150,6 +156,7 @@ en:
     edit: 
       title: "Password reset"
       update: "Update password"
+      confirm: "Confirmation"
     sent_email_notification: "Email sent with password reset instructions"
     email_not_found: "Email address not found"
     empty: "can't be empty"
@@ -158,3 +165,18 @@ en:
     fail: "Reset password failed"
     flash: "User not found"
     forbidden: You are not authorized to do this action"
+  microposts:
+    create:
+      success: "Micropost created!"
+      fail: "Error creating micropost"
+    destroy:
+      success: "Micropost deleted"
+    micropost:
+      post_time: "Post %{time} ago"
+      delete: "Delete"
+      confirm: "You sure?"
+    errors:
+      image_format: "must be a valid image format"
+      size_too_big: "should be less than 5MB"
+
+
