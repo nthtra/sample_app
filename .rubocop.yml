@@ -552,6 +552,9 @@ Rails/ReadWriteAttribute:
   Include:
     - app/models/**/*.rb
 
+Rails/ReflectionClassName:
+  Enabled: false
+
 Rails/ScopeArgs:
   Include:
     - app/models/**/*.rb
